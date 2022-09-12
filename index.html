@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>AstronomyLovers</h1>
-      <nav>
-        <li><a href="images">Images</a></li>
-        <li><a href="phrase">Phrase</a></li>
-        <li><a href="nasapg">NasaPg</a></li>
+    <header class="header">
+      <h1 class="title">AstronomyLovers</h1>
+      <nav class="nav">
+        <li><a class="nav-link" href="#images">Images</a></li>
+        <li><a class="nav-link" href="#phrase">Phrase</a></li>
+        <li><a class="nav-link" href="#nasapg">NasaPg</a></li>
       </nav>
     </header>
     <main>
       <article class="intro">
         <div class="intro-container">
-          <h1>Expressing my love for astronomy</h1>
+          <h1 class="title-intro-container">Expressing my love for astronomy</h1>
           <p>
             Here is this page I wanna share a little bit of love for one of my passions, and yes,
             that is "Astronomy". I wanna show you some images and a good phrase with the oficial
@@ -28,35 +28,44 @@
         </div>
         <img class="intro-img" src="img/the-milky-way-from-earth.jpg" alt="milkyway" />
       </article>
-      <article class="images">
-        <h1>Some beutiful images</h1>
-        <div class="imgcontainer">
+      <article class="images" id="images">
+        <h1 class="title-images">Some beutiful images</h1>
+        <div class="img-container">
           <figure>
             <img src="img/carina.png" alt="carina" />
             <figcaption>Text random for now</figcaption>
           </figure>
-          <img src="img/deepfield.jpeg" alt="deepfield" />
-          <img src="img/snova.jpg" alt="snova" />
-          <img src="img/galaxys.jpg" alt="galaxys" />
+          <figure>
+            <img src="img/deepfield.jpeg" alt="deepfield" />
+            <figcaption>Text random for now</figcaption>
+          </figure>
+          <figure>
+            <img src="img/snova.jpg" alt="snova" />
+            <figcaption>Text random for now</figcaption>
+          </figure>
+          <figure>
+            <img src="img/galaxys.jpg" alt="galaxys" />
+            <figcaption>Text random for now</figcaption>
+          </figure>
         </div>
       </article>
-      <article class="phrase">
-        <p class="p-phrase">
-          Some part of our being knows this is where we came from. We long to return. And we can.
-          Because the cosmos is also within us. We're made of star-stuff. We are a way for the
-          cosmos to know itself.
-        </p>
-        <p class="p-phrase2">~ Carl Sagan</p>
-      </article>
-      <article class="nasapg">
-        <div class="box-link">
-          <a href="https://www.nasa.gov/"
-            >Oficial NASA (National Aeronautics and Space Administration) page</a
-          >
+      <article class="phrase" id="phrase">
+        <div class="phrase-container">
+          <p class="p-phrase">
+            Some part of our being knows this is where we came from. We long to return. And we can.
+            Because the cosmos is also within us. We're made of star-stuff. We are a way for the
+            cosmos to know itself.
+          </p>
+          <p class="p-phrase2">~ Carl Sagan</p>
         </div>
+      </article>
+      <article class="nasapg" id="nasapg">
+        <a class="nasalink" href="https://www.nasa.gov/"
+          >Oficial NASA (National Aeronautics and Space Administration) page</a
+        >
       </article>
     </main>
-    <footer>
+    <footer class="footer">
       <p>Copyright - The Odin Project 2022</p>
     </footer>
   </body>
